@@ -5,10 +5,7 @@ import generator from "generate-password-ts";
 
 import { render } from "@react-email/render";
 import nodemailer from "nodemailer";
-import {
-  StudentEnrollmentEmail,
-  WelcomeToEduOrbit,
-} from "@/templates/WelcomeToEduOrbit";
+import { WelcomeToEduOrbit } from "@/templates/WelcomeToEduOrbit";
 import CourseEnrollmentEmail from "@/templates/CourseEnrollmentEmail";
 
 export async function POST(req: Request) {

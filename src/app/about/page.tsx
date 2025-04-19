@@ -117,7 +117,7 @@ export default function AboutPage() {
             At EduOrbit, we believe that education should be accessible, engaging, and effective. 
             Our platform is designed to empower educators to share their knowledge and expertise, 
             while providing learners with the tools they need to grow both personally and professionally. 
-            We're committed to continuous innovation and improvement, always seeking new ways to enhance 
+            We&apos;re committed to continuous innovation and improvement, always seeking new ways to enhance 
             the learning experience for our community.
           </motion.p>
         </div>
