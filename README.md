@@ -97,7 +97,7 @@ To get a local copy up and running, follow these simple steps.
 ### Prerequisites
 - Node.js (v18 or higher)
 - PostgreSQL
-- pnpm package manager
+- pnpm or npm package manager
 
 ### Clone the Repository
 ```sh
@@ -107,7 +107,11 @@ cd lms
 
 ### Install Dependencies
 ```sh
+# Using pnpm
 pnpm install
+
+# Using npm
+npm install
 ```
 
 ### Setup Environment Variables
@@ -143,21 +147,87 @@ RESEND_API_KEY=your_resend_api_key
 
 ### Run Database Schema Push
 ```sh
+# Using pnpm
 pnpm dlx prisma db push
+
+# Using npm
+npx prisma db push
 ```
 
 ### Run Schema Types Generation
 ```sh
+# Using pnpm
 pnpm dlx prisma generate
+
+# Using npm
+npx prisma generate
 ```
 
 ### Start the Application
 ```sh
+# Using pnpm
 pnpm dev
+
+# Using npm
+npm run dev
 ```
 
 ## Usage
 To start using the application, navigate to `http://localhost:3000` in your browser.
+
+## Database Management
+
+### Setting Up a Local Database
+```sh
+# Install PostgreSQL locally or use Docker
+# Docker example:
+docker run --name eduorbit-postgres -e POSTGRES_PASSWORD=password -e POSTGRES_USER=postgres -e POSTGRES_DB=eduorbit -p 5432:5432 -d postgres
+
+# Verify database connection
+# Using pnpm
+pnpm dlx prisma studio
+
+# Using npm
+npx prisma studio
+```
+
+### Pushing Schema Changes
+After making changes to the Prisma schema, push them to the database:
+```sh
+# Using pnpm
+pnpm dlx prisma db push
+
+# Using npm
+npx prisma db push
+```
+
+### Running Migrations
+For production environments, use migrations instead of direct pushing:
+```sh
+# Create a migration
+# Using pnpm
+pnpm dlx prisma migrate dev --name your_migration_name
+
+# Using npm
+npx prisma migrate dev --name your_migration_name
+
+# Apply migrations in production
+# Using pnpm
+pnpm dlx prisma migrate deploy
+
+# Using npm
+npx prisma migrate deploy
+```
+
+### Reset Database
+To reset your database (caution: deletes all data):
+```sh
+# Using pnpm
+pnpm dlx prisma migrate reset
+
+# Using npm
+npx prisma migrate reset
+```
 
 ## Project Structure
 ```
@@ -195,7 +265,12 @@ EduOrbit can be deployed on various platforms. Here are instructions for deployi
 4. Deploy the application
 
 ```sh
+# Using pnpm
 pnpm run build
+vercel --prod
+
+# Using npm
+npm run build
 vercel --prod
 ```
 
@@ -215,8 +290,8 @@ Please make sure to update tests as appropriate and adhere to the existing codin
 
 For any queries or support, please reach out to us:
 
-- Project Maintainer: [Angel Singh](mailto:angelsingh2199@gmail.com) [Ashutosh Kumar](https://github.com/ashukr321)
-- GitHub: [Angel Singh](https://github.com/angel7544)
+- Project Maintainer: [Angel Singh](mailto:angelsingh2199@gmail.com)
+- GitHub: [Ashutosh Kumar](https://github.com/ashukr321) [Angel Singh](https://github.com/angel7544)
 
 ---
 

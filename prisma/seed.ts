@@ -27,6 +27,25 @@ async function main() {
     });
   }
 
+  // Create goals
+  const goals = [
+    { title: 'Learn a new skill' },
+    { title: 'Get a better job' },
+    { title: 'Personal growth' },
+    { title: 'Career advancement' },
+    { title: 'Just for fun' }
+  ];
+
+  console.log('Seeding goals...');
+  
+  for (const goal of goals) {
+    await prisma.goal.upsert({
+      where: { title: goal.title },
+      update: {},
+      create: goal,
+    });
+  }
+
   console.log('Seeding completed.');
 }
 

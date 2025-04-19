@@ -2,6 +2,9 @@
   "name": "lms",
   "version": "0.1.0",
   "private": true,
+  "prisma": {
+    "seed": "npx ts-node prisma/seed.ts"
+  },
   "scripts": {
     "email": "email dev",
     "dev": "next dev",
