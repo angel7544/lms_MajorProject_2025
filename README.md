@@ -101,7 +101,7 @@ To get a local copy up and running, follow these simple steps.
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/DevKrishnasai/lms.git
+git clone https://github.com/angel7544/lms.git
 cd lms
 ```
 
