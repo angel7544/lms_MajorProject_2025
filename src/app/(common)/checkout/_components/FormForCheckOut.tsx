@@ -92,7 +92,7 @@ const FormForCheckOut: React.FC<FormForCheckOutProps> = ({
         });
         var options = {
           key: process.env.RAZORPAY_KEY,
-          name: "YourLMS",
+          name: "EduOrbit",
           currency: "INR",
           amount: data.price,
           order_id: data.orderId,

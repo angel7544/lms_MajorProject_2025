@@ -5,7 +5,7 @@ import { Role } from "@prisma/client";
 import { render } from "@react-email/render";
 import { redirect } from "next/navigation";
 import nodemailer from "nodemailer";
-import WelcomeToLMS from "../../../emails/WelcomeToLMS";
+import WelcomeToEduOrbit from "../../../emails/WelcomeToEduOrbit";
 
 export const updateOnboarding = async (data: {
   selectedCategories: string[];
@@ -77,9 +77,9 @@ export const updateOnboarding = async (data: {
   const mailOptions = {
     from: process.env.MAIL_USER,
     to: user.email,
-    subject: "Welcome To YourLMS Portal",
+    subject: "Welcome To EduOrbit Portal",
     html: render(
-      WelcomeToLMS({
+      WelcomeToEduOrbit({
         name: user?.name || user.email.split("@")[0],
         role: user.role,
       })

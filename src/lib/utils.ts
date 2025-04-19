@@ -60,7 +60,7 @@ export async function generatePasswordsAndSendMails<T>(
   path: string,
   type: "PATCH" | "PUT" | "POST" | "DELETE"
 ) {
-  toast.loading(`creating lms access for given mails...`, {
+  toast.loading(`creating EduOrbit access for given mails...`, {
     id: "update",
   });
   try {

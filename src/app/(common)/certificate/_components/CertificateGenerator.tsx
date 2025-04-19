@@ -128,7 +128,7 @@ const Certificate: React.FC<CertificateProps> = ({
                 transform: "rotate(-30deg)",
               }}
             >
-              <p>YourLMS</p>
+              <p>EduOrbit</p>
             </div>
 
             {/* Award Icon as SVG */}
@@ -175,7 +175,7 @@ const Certificate: React.FC<CertificateProps> = ({
                 />
                 <div className="w-48 border-t-2 border-black mx-auto"></div>
                 <p className="mt-2 font-bold text-black">{directorName}</p>
-                <p>YourLMS CEO</p>
+                <p>EduOrbit CEO</p>
               </div>
             </div>
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-black text-[10px] mb-1">

@@ -12,7 +12,7 @@ const Navbar = () => (
       <div className="flex items-center justify-between h-16">
         <div className="flex-shrink-0">
           <Link href="/" className="text-white text-2xl font-bold">
-            YourLMS
+            EduOrbit
           </Link>
         </div>
         <div className="hidden md:block">
@@ -135,7 +135,7 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="text-xl md:text-2xl mb-8"
           >
-            Transform education with our intuitive and powerful LMS
+            Transform education with our intuitive and powerful EduOrbit platform
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
@@ -197,17 +197,17 @@ export default function Home() {
             <TestimonialCard
               name="Sarah Johnson"
               role="University Professor"
-              content="YourLMS has revolutionized the way I teach. The intuitive interface and powerful features have made course management a breeze."
+              content="EduOrbit has revolutionized the way I teach. The intuitive interface and powerful features have made course management a breeze."
             />
             <TestimonialCard
               name="Mark Thompson"
               role="Corporate Trainer"
-              content="The analytics provided by YourLMS have been invaluable in improving our training programs. Highly recommended for any organization."
+              content="The analytics provided by EduOrbit have been invaluable in improving our training programs. Highly recommended for any organization."
             />
             <TestimonialCard
               name="Emily Chen"
               role="Online Course Creator"
-              content="As an independent educator, YourLMS has given me the tools to create and sell courses professionally. It's been a game-changer for my business."
+              content="As an independent educator, EduOrbit has given me the tools to create and sell courses professionally. It's been a game-changer for my business."
             />
           </div>
         </div>
@@ -259,7 +259,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-between">
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
-              <h3 className="text-white text-lg font-semibold mb-2">YourLMS</h3>
+              <h3 className="text-white text-lg font-semibold mb-2">EduOrbit</h3>
               <p>Empowering education through technology.</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
@@ -286,7 +286,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
               <h4 className="text-white text-lg font-semibold mb-2">Contact</h4>
-              <p>Email: info@yourlms.com</p>
+              <p>Email: info@eduorbit.com</p>
               <p>Phone: (123) 456-7890</p>
             </div>
             <div className="w-full md:w-1/4">
@@ -340,7 +340,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 border-t border-gray-700 pt-8 text-center">
-            <p>&copy; 2024 YourLMS. All rights reserved.</p>
+            <p>&copy; 2024 EduOrbit. All rights reserved.</p>
           </div>
         </div>
       </footer>

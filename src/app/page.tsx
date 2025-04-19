@@ -12,6 +12,7 @@ import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Image from "next/image";
 
 export default function Home() {
   const features = [
@@ -55,7 +56,7 @@ export default function Home() {
 
   const { isSignedIn } = useAuth();
 
-  const text = `Empower educators and learners with our innovative learning management system. Experience the future of education with YourLMS's cutting-edge platform.`;
+  const text = `Empower educators and learners with our innovative learning management system. Experience the future of education with EduOrbit's cutting-edge platform.`;
 
   return (
     <div className="w-full min-h-screen bg-black text-white">
@@ -64,10 +65,17 @@ export default function Home() {
       <div className="min-h-screen flex items-center justify-center">
         <GridPattern>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center justify-center">
+              <Image 
+                src="/logo192.png" 
+                alt="Logo" 
+                width={120} 
+                height={120} 
+                className="mb-6"
+              />
               <p className="font-display text-5xl font-bold tracking-[-0.02em] text-white sm:text-6xl md:text-7xl mb-6 text-center max-w-4xl">
                 <SparklesText
-                  text="YourLMS"
+                  text="EduOrbit"
                   className="inline-block mr-2 text-white"
                 />
                 <br />
@@ -157,7 +165,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-gray-800 rounded-lg p-8 shadow-xl">
               <p className="text-lg text-gray-300 mb-4">
-                &quot;YourLMS has transformed the way I create and manage my
+                &quot;EduOrbit has transformed the way I create and manage my
                 online courses. The course studio is intuitive, and the
                 integrated payment system makes it easy to monetize my
                 expertise.&quot;
@@ -174,7 +182,7 @@ export default function Home() {
                 employers.&quot;
               </p>
               <p className="text-blue-400 font-semibold">
-                - L. Vignesh , YourLMS User
+                - L. Vignesh , EduOrbit User
               </p>
             </div>
           </div>
@@ -205,7 +213,7 @@ export default function Home() {
                       forceRedirectUrl="/onboarding"
                       mode="redirect"
                     >
-                      ✨ Join YourLMS Today
+                      ✨ Join EduOrbit Today
                     </SignUpButton>
                   )}
                   <ArrowRightIcon className="ml-2 size-5 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
@@ -217,7 +225,7 @@ export default function Home() {
       </section>
 
       <div className="flex justify-center items-center gap-5 pb-10">
-        <span>© 2024 YourLMS. All rights reserved.</span>
+        <span>© 2024 EduOrbit. All rights reserved.</span>
       </div>
     </div>
   );

@@ -58,7 +58,7 @@ export const updatePaymentStatus = async (
     const mailOptions = {
       from: process.env.MAIL_USER,
       to: user.email,
-      subject: "Course Enrollment in YourLMS",
+      subject: "Course Enrollment in EduOrbit",
       html: render(CourseEnrollmentEmail({ ...emailDetails })),
     };
 

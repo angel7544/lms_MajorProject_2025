@@ -10,13 +10,10 @@ import "@uploadthing/react/styles.css";
 import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
-<link
-  rel="stylesheet"
-  href="https://video-react.github.io/assets/video-react.css"
-/>;
+
 export const metadata: Metadata = {
-  title: "LMS Portal",
-  description: "LMS portal for students and teachers",
+  title: "EduOrbit Portal",
+  description: "EduOrbit portal for students and teachers",
 };
 
 export default function RootLayout({

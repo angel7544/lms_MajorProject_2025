@@ -24,7 +24,7 @@ interface CourseEnrollmentEmailProps {
 
 const defaultCourseEnrollmentEmailProps: CourseEnrollmentEmailProps = {
   name: "John Doe",
-  courseUrl: "https://yourlms.com/courses/123",
+  courseUrl: "https://eduorbit.com/courses/123",
   authorName: "Jane Smith",
   chapterCount: 10,
   courseName: "Introduction to React",
@@ -53,7 +53,7 @@ export const CourseEnrollmentEmail = ({
               src={`${baseUrl}/banner.png`}
               width={600}
               height={200}
-              alt="YourLMS Course Enrollment"
+              alt="EduOrbit Course Enrollment"
               style={headerImage}
             />
           </Section>
@@ -130,12 +130,12 @@ export const CourseEnrollmentEmail = ({
               src={`${baseUrl}/footer.png`}
               width={600}
               height={100}
-              alt="YourLMS Footer"
+              alt="EduOrbit Footer"
               style={footerImage}
             />
           </Section>
           <Text style={copyright}>
-            © {new Date().getFullYear()} YourLMS | All Rights Reserved
+            © {new Date().getFullYear()} EduOrbit | All Rights Reserved
           </Text>
         </Container>
       </Body>

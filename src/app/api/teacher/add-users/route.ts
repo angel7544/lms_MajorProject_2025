@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 import { render } from "@react-email/render";
 import nodemailer from "nodemailer";
-import { WelcomeToLMS } from "@/templates/WelcomeToLMS";
+import { WelcomeToEduOrbit } from "@/templates/WelcomeToEduOrbit";
 
 export async function POST(req: Request) {
   try {
@@ -64,9 +64,9 @@ export async function POST(req: Request) {
       return transport.sendMail({
         from: process.env.MAIL_USER,
         to: email,
-        subject: "Welcome To LMS",
+        subject: "Welcome To EduOrbit",
         html: render(
-          WelcomeToLMS({
+          WelcomeToEduOrbit({
             email,
             studentFirstName: user?.name || "student",
           })

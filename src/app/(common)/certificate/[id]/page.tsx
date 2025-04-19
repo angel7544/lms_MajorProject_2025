@@ -51,7 +51,7 @@ const page = async ({ params }: { params: { id: string } }) => {
       courseDuration={`${certificateDetails.course.duration} hours`}
       instructorName={certificateDetails.course.user.name!}
       // TODO : ADMIN
-      directorName={"Krishna Sai"}
+      directorName={"Angel Singh"}
       verificationURL={`${process.env.BASE_URL}/certificate/${certificateDetails.id}`}
       instructorSignature={certificateDetails.course.user.signature!}
       // TODO : ADMIN

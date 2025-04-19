@@ -26,7 +26,7 @@ interface CourseCompletionEmailProps {
 //   studentName: "John Doe",
 //   courseName: "Introduction to React",
 //   instructorName: "Jane Smith",
-//   certificateUrl: "https://yourlms.com/certificates/123",
+//   certificateUrl: "https://eduorbit.com/certificates/123",
 // };
 
 export const CourseCompletionEmail = ({
@@ -52,7 +52,7 @@ export const CourseCompletionEmail = ({
               src={`${baseUrl}/banner.png`}
               width={600}
               height={200}
-              alt="YourLMS Course Completion"
+              alt="EduOrbit Course Completion"
               style={headerImage}
             />
           </Section>
@@ -108,12 +108,12 @@ export const CourseCompletionEmail = ({
               src={`${baseUrl}/footer.png`}
               width={600}
               height={100}
-              alt="YourLMS Footer"
+              alt="EduOrbit Footer"
               style={footerImage}
             />
           </Section>
           <Text style={copyright}>
-            © {new Date().getFullYear()} YourLMS | All Rights Reserved
+            © {new Date().getFullYear()} EduOrbit | All Rights Reserved
           </Text>
         </Container>
       </Body>

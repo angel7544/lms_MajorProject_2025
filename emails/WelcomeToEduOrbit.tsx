@@ -258,4 +258,4 @@ const copyright = {
   lineHeight: "24px",
   textAlign: "center" as const,
   marginTop: "24px",
-};
+}; 

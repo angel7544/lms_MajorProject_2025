@@ -5,9 +5,10 @@ import generator from "generate-password-ts";
 
 import { render } from "@react-email/render";
 import nodemailer from "nodemailer";
-import StudentPortalAccessEmailAndPassword, {
-  WelcomeToLMS,
-} from "@/templates/WelcomeToLMS";
+import {
+  StudentEnrollmentEmail,
+  WelcomeToEduOrbit,
+} from "@/templates/WelcomeToEduOrbit";
 import CourseEnrollmentEmail from "@/templates/CourseEnrollmentEmail";
 
 export async function POST(req: Request) {
@@ -75,9 +76,9 @@ export async function POST(req: Request) {
       return transport.sendMail({
         from: process.env.MAIL_USER,
         to: user.email,
-        subject: "Welcome To LMS",
+        subject: "Welcome To EduOrbit",
         html: render(
-          WelcomeToLMS({
+          WelcomeToEduOrbit({
             email: user.email,
             studentFirstName: user?.name || "student",
           })

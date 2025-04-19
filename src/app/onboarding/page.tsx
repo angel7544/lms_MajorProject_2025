@@ -67,7 +67,7 @@ const OnboardingPage = async () => {
     <div className="min-h-screen flex flex-col items-center justify-center p-8">
       <div className=" rounded-lg shadow-xl p-8 max-w-3xl w-full">
         <h1 className="text-4xl font-bold mb-6 text-center ">
-          Welcome to YourLMS, {user?.firstName}!
+          Welcome to EduOrbit, {user?.firstName}!
         </h1>
         <p className="text-lg mb-8 text-center text-gray-600">
           Let&apos;s personalize your learning journey. Tell us a bit about

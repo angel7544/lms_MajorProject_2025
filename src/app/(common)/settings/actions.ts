@@ -4,7 +4,7 @@ import { prisma } from "@/lib/db";
 import { auth } from "@clerk/nextjs/server";
 import { render } from "@react-email/render";
 import nodemailer from "nodemailer";
-import WelcomeToLMS from "../../../../emails/WelcomeToLMS";
+import WelcomeToEduOrbit from "../../../../emails/WelcomeToEduOrbit";
 
 export const onboarding = async () => {
   try {
@@ -35,9 +35,9 @@ export const onboarding = async () => {
     const mailOptions = {
       from: process.env.MAIL_USER,
       to: user.email,
-      subject: "Welcome To YourLMS Portal (Role Change)",
+      subject: "Welcome To EduOrbit Portal (Role Change)",
       html: render(
-        WelcomeToLMS({
+        WelcomeToEduOrbit({
           name: user?.name || user.email.split("@")[0],
           role: "TEACHER",
         })
