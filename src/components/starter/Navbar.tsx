@@ -7,6 +7,7 @@ const Navbar = () => {
   const links = [
     { name: "Home", link: "/" },
     { name: "Features", link: "#features" },
+    { name: "About", link: "/about" },
   ];
   return (
     <nav className="fixed w-full z-10 bg-black/80 backdrop-blur-sm">

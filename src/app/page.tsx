@@ -189,6 +189,85 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section id="team" className="py-20 bg-gradient-to-b from-gray-900 to-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-extrabold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+            Meet Our Team
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-gray-800 rounded-lg overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105">
+              <div className="h-64 bg-gray-700 relative">
+                <Image 
+                  src="/images/team/john.jpg" 
+                  alt="John Doe"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">John Doe</h3>
+                  <p className="text-blue-400">Founder & Lead Developer</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-800 rounded-lg overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105">
+              <div className="h-64 bg-gray-700 relative">
+                <Image 
+                  src="/images/team/jane.jpg" 
+                  alt="Jane Smith"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Jane Smith</h3>
+                  <p className="text-blue-400">UX/UI Designer</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-800 rounded-lg overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105">
+              <div className="h-64 bg-gray-700 relative">
+                <Image 
+                  src="/images/team/alex.jpg" 
+                  alt="Alex Johnson"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Alex Johnson</h3>
+                  <p className="text-blue-400">Content Strategy Lead</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-gray-800 rounded-lg overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105">
+              <div className="h-64 bg-gray-700 relative">
+                <Image 
+                  src="/images/team/sarah.jpg" 
+                  alt="Sarah Williams"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Sarah Williams</h3>
+                  <p className="text-blue-400">Education Consultant</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <Link 
+              href="/about" 
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            >
+              Learn More About Our Team
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section
         id="cta"
