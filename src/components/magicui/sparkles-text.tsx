@@ -82,27 +82,33 @@ const SparklesText: React.FC<SparklesTextProps> = ({
     };
 
     const initializeStars = () => {
-      const newSparkles = Array.from({ length: sparklesCount }, generateStar);
-      setSparkles(newSparkles);
+      const stars = [];
+      for (let i = 0; i < sparklesCount; i++) {
+        stars.push(generateStar());
+      }
+      setSparkles(stars);
     };
 
     const updateStars = () => {
-      setSparkles((currentSparkles) =>
-        currentSparkles.map((star) => {
-          if (star.lifespan <= 0) {
-            return generateStar();
-          } else {
-            return { ...star, lifespan: star.lifespan - 0.1 };
-          }
-        })
-      );
+      setSparkles((prevSparkles) => {
+        const now = Date.now();
+        const updatedSparkles = prevSparkles
+          .map((sparkle) => {
+            if (now > sparkle.lifespan) {
+              return generateStar();
+            }
+            return sparkle;
+          })
+          .filter(Boolean);
+        return updatedSparkles;
+      });
     };
 
     initializeStars();
     const interval = setInterval(updateStars, 100);
 
     return () => clearInterval(interval);
-  }, [colors.first, colors.second]);
+  }, [colors.first, colors.second, sparklesCount]);
 
   return (
     <div
