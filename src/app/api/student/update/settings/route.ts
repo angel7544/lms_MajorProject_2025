@@ -3,7 +3,7 @@ import { auth } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 
 export async function PUT(req: Request, res: Response) {
-  const { name, bio, roleChange, signature } = await req.json();
+  const { name, bio, roleChange, signature, profilePic } = await req.json();
   if (!name || !bio) {
     return NextResponse.json(
       { message: "Name and Bio are required" },
@@ -23,6 +23,7 @@ export async function PUT(req: Request, res: Response) {
       data: {
         name,
         bio,
+        profilePic,
       },
     });
   } else {
@@ -41,6 +42,7 @@ export async function PUT(req: Request, res: Response) {
         bio,
         role: "TEACHER",
         signature,
+        profilePic,
       },
     });
   }

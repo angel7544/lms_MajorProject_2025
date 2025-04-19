@@ -5,6 +5,8 @@ import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import React from "react";
 import SettingsField from "./_components/SettingsField";
+import GoalsManager from "../profile/_components/GoalsManager";
+import CategoriesManager from "../profile/_components/CategoriesManager";
 
 const page = async () => {
   const { userId } = auth();
@@ -26,7 +28,7 @@ const page = async () => {
   if (!user) redirect("/not-authorized");
 
   return (
-    <div className="w-full h-full overflow-y-auto p-4 space-y-3">
+    <div className="w-full h-full overflow-y-auto p-4 space-y-6">
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-3xl font-bold">Settings</h1>
@@ -35,7 +37,13 @@ const page = async () => {
           </p>
         </div>
       </div>
+      
       <SettingsField user={user} />
+      
+      <div className="space-y-6">
+        <GoalsManager />
+        <CategoriesManager />
+      </div>
     </div>
   );
 };

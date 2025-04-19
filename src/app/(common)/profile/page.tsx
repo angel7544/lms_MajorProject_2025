@@ -179,20 +179,28 @@ const ProfilePage = async () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Target className="mr-2 flex-shrink-0" /> Goals
+                  <Target className="mr-2 flex-shrink-0" /> Learning Goals
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                {user.goals.map((goal) => (
-                  <div
-                    key={goal.goal.id}
-                    className="mb-4 p-4 border rounded-lg"
-                  >
-                    <h3 className="font-semibold break-words">
-                      {goal.goal.title}
-                    </h3>
+                {user.goals.length === 0 ? (
+                  <div className="mb-4 p-4 border rounded-lg text-center">
+                    No goals selected. You can manage your goals in the settings page.
                   </div>
-                ))}
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {user.goals.map((goal) => (
+                      <div
+                        key={goal.goal.id}
+                        className="p-4 border rounded-lg"
+                      >
+                        <h3 className="font-semibold break-words">
+                          {goal.goal.title}
+                        </h3>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </CardContent>
             </Card>
           </TabsContent>
@@ -201,24 +209,32 @@ const ProfilePage = async () => {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Folder className="mr-2 flex-shrink-0" /> Categories
+                  <Folder className="mr-2 flex-shrink-0" /> Preferred Categories
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                {user.categories.map((category) => (
-                  <Link
-                    key={category.category.id}
-                    href={`/courses?search=${encodeURIComponent(
-                      category.category.title
-                    )}`}
-                  >
-                    <div className="mb-4 p-4 border rounded-lg">
-                      <h3 className="font-semibold break-words">
-                        {category.category.title}
-                      </h3>
-                    </div>
-                  </Link>
-                ))}
+                {user.categories.length === 0 ? (
+                  <div className="mb-4 p-4 border rounded-lg text-center">
+                    No categories selected. You can manage your categories in the settings page.
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {user.categories.map((category) => (
+                      <Link
+                        key={category.category.id}
+                        href={`/courses?search=${encodeURIComponent(
+                          category.category.title
+                        )}`}
+                      >
+                        <div className="p-4 border rounded-lg">
+                          <h3 className="font-semibold break-words">
+                            {category.category.title}
+                          </h3>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </CardContent>
             </Card>
           </TabsContent>

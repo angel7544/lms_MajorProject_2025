@@ -17,6 +17,7 @@ import {
 import Fileupload from "@/components/Fileupload";
 import { useRouter } from "next/navigation";
 import { onboarding } from "../actions";
+import Image from "next/image";
 
 interface SettingsFieldProps {
   user: User;
@@ -27,6 +28,7 @@ const SettingsField = ({ user }: SettingsFieldProps) => {
   const [bio, setBio] = useState(user.bio || "");
   const [role, setRole] = useState<Role>(user.role);
   const [signature, setSignature] = useState(user.signature || "");
+  const [profilePic, setProfilePic] = useState(user.profilePic || "");
   const router = useRouter();
 
   const onSubmit = async () => {
@@ -55,6 +57,7 @@ const SettingsField = ({ user }: SettingsFieldProps) => {
           bio,
           roleChange,
           signature,
+          profilePic,
         });
         if (res.status === 200) {
           toast.success("Settings updated successfully", {
@@ -89,6 +92,7 @@ const SettingsField = ({ user }: SettingsFieldProps) => {
           bio,
           roleChange: true,
           signature,
+          profilePic,
         });
         if (res.status === 200) {
           toast.success("Settings updated successfully", {
@@ -109,11 +113,57 @@ const SettingsField = ({ user }: SettingsFieldProps) => {
     name !== user.name ||
     bio !== user.bio ||
     role !== user.role ||
+    profilePic !== user.profilePic ||
     (user.role === "TEACHER" && signature !== user.signature);
 
   return (
     <div className="flex flex-col lg:flex-row gap-8">
       <div className="space-y-5 w-full lg:w-1/2">
+        <div className="flex flex-col gap-3">
+          <h3 className="w-32">Profile Picture</h3>
+          <div className="flex flex-col items-center gap-4">
+            {profilePic ? (
+              <div className="relative w-32 h-32 rounded-full overflow-hidden border-2 border-gray-300">
+                <Image 
+                  src={profilePic} 
+                  alt="Profile" 
+                  fill
+                  className="object-cover"
+                />
+                <Button 
+                  variant="destructive" 
+                  size="sm"
+                  className="absolute bottom-0 right-0 h-8 w-8 p-0 rounded-full"
+                  onClick={() => setProfilePic("")}
+                >
+                  X
+                </Button>
+              </div>
+            ) : (
+              <div className="w-32 h-32 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
+                <Image 
+                  src="/icon-author.png" 
+                  alt="Default Profile" 
+                  width={100} 
+                  height={100}
+                  className="object-cover"
+                />
+              </div>
+            )}
+            <div className="w-full max-w-xs">
+              <Fileupload
+                endpoint="uploadBasicStuff"
+                onChange={(url) => {
+                  setProfilePic(url);
+                }}
+              />
+              <p className="text-xs text-gray-500 mt-2 text-center">
+                Upload a square image for best results
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="flex flex-col gap-3">
           <h3 className="w-32">Username</h3>
           <Input value={name} onChange={(e) => setName(e.target.value)} />
