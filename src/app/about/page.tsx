@@ -21,10 +21,10 @@ const TeamMember = ({
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-6 shadow-xl"
+      className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 rounded-lg p-6 shadow-xl hover:shadow-2xl hover:from-white hover:to-gray-50 dark:hover:from-gray-800 dark:hover:to-gray-700 transition-all duration-300"
     >
       <div className="flex flex-col items-center mb-4">
-        <div className="relative w-32 h-32 mb-4 overflow-hidden rounded-full border-2 border-blue-500">
+        <div className="relative w-32 h-32 mb-4 overflow-hidden rounded-full border-2 border-blue-500 hover:border-blue-600 dark:hover:border-blue-400 transition-colors duration-300">
           <Image
             src={image}
             alt={name}
@@ -32,10 +32,10 @@ const TeamMember = ({
             className="object-cover"
           />
         </div>
-        <h3 className="text-2xl font-bold text-blue-400">{name}</h3>
-        <p className="text-gray-300 text-sm mb-2">{role}</p>
+        <h3 className="text-2xl font-bold text-blue-500 dark:text-blue-400">{name}</h3>
+        <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">{role}</p>
       </div>
-      <p className="text-gray-300 text-center">{bio}</p>
+      <p className="text-gray-700 dark:text-gray-300 text-center">{bio}</p>
     </motion.div>
   );
 };
@@ -69,12 +69,12 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-black text-white">
+    <div className="w-full min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white">
       <Navbar />
       <div className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <Link 
           href="/" 
-          className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8"
+          className="inline-flex items-center text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mb-8 transition-colors duration-200"
         >
           <ArrowLeftIcon className="mr-2 h-4 w-4" />
           Back to Home
@@ -93,7 +93,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-gray-300 max-w-3xl mx-auto"
+            className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto"
           >
             EduOrbit was founded with a mission to transform online education by providing a platform that connects passionate educators with eager learners worldwide.
           </motion.p>
@@ -112,7 +112,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg text-gray-300 max-w-4xl mx-auto text-center"
+            className="text-lg text-gray-700 dark:text-gray-300 max-w-4xl mx-auto text-center"
           >
             At EduOrbit, we believe that education should be accessible, engaging, and effective. 
             Our platform is designed to empower educators to share their knowledge and expertise, 
@@ -143,7 +143,7 @@ export default function AboutPage() {
         </div>
       </div>
       
-      <div className="flex justify-center items-center gap-5 py-10 border-t border-gray-800">
+      <div className="flex justify-center items-center gap-5 py-10 border-t border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300">
         <span>© 2024 EduOrbit. All rights reserved.</span>
       </div>
     </div>
