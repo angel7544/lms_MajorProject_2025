@@ -215,9 +215,8 @@ Please make sure to update tests as appropriate and adhere to the existing codin
 
 For any queries or support, please reach out to us:
 
-- Project Maintainer: [Your Name](mailto:your.email@example.com)
-- GitHub: [DevKrishnasai](https://github.com/DevKrishnasai)
-- Website: [eduorbit.example.com](https://eduorbit.example.com)
+- Project Maintainer: [Angel Singh](mailto:angelsingh2199@gmail.com) [Ashutosh Kumar](https://github.com/ashukr321)
+- GitHub: [Angel Singh](https://github.com/angel7544)
 
 ---
 
