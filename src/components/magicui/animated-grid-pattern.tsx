@@ -70,11 +70,10 @@ export function GridPattern({
     if (dimensions.width && dimensions.height) {
       setSquares(generateSquares(numSquares));
     }
-  }, [dimensions, numSquares, generateSquares]);
+  }, [dimensions, numSquares]);
 
   // Resize observer to update container dimensions
   useEffect(() => {
-    const currentRef = containerRef.current;
     const resizeObserver = new ResizeObserver((entries) => {
       for (let entry of entries) {
         setDimensions({
@@ -84,16 +83,16 @@ export function GridPattern({
       }
     });
 
-    if (currentRef) {
-      resizeObserver.observe(currentRef);
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current);
     }
 
     return () => {
-      if (currentRef) {
-        resizeObserver.unobserve(currentRef);
+      if (containerRef.current) {
+        resizeObserver.unobserve(containerRef.current);
       }
     };
-  }, []);
+  }, [containerRef]);
 
   return (
     <svg
