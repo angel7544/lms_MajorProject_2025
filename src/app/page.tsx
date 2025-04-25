@@ -228,29 +228,44 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800/30 rounded-lg overflow-hidden shadow-md hover:shadow-lg ring-1 ring-gray-200 dark:ring-gray-700/50 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:scale-105">
               <div className="h-64 bg-gray-200 dark:bg-gray-800 relative">
                 <Image 
-                  src="/images/team/john.jpg" 
-                  alt="John Doe"
+                  src="/images/team/angel.jpg" 
+                  alt="Angel Singh"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">John Doe</h3>
-                  <p className="text-blue-400">Founder & Lead Developer</p>
+                  <h3 className="text-xl font-bold">Angel Singh</h3>
+                  <p className="text-blue-400">Founder & Developer</p>
                 </div>
               </div>
             </div>
             <div className="bg-white dark:bg-gray-800/30 rounded-lg overflow-hidden shadow-md hover:shadow-lg ring-1 ring-gray-200 dark:ring-gray-700/50 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:scale-105">
               <div className="h-64 bg-gray-200 dark:bg-gray-800 relative">
                 <Image 
-                  src="/images/team/jane.jpg" 
-                  alt="Jane Smith"
+                  src="/images/team/ashutosh.jpg" 
+                  alt="Ashutosh Kumar"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">Jane Smith</h3>
+                  <h3 className="text-xl font-bold">Ashutosh Kumar</h3>
+                  <p className="text-blue-400">Co-Founder & CTO</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-gray-800/30 rounded-lg overflow-hidden shadow-md hover:shadow-lg ring-1 ring-gray-200 dark:ring-gray-700/50 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:scale-105">
+              <div className="h-64 bg-gray-200 dark:bg-gray-800 relative">
+                <Image 
+                  src="/images/team/himanshu.webp" 
+                  alt="Himanshu Kumar"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold">Himanshu Kumar</h3>
                   <p className="text-blue-400">UX/UI Designer</p>
                 </div>
               </div>
@@ -258,29 +273,14 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800/30 rounded-lg overflow-hidden shadow-md hover:shadow-lg ring-1 ring-gray-200 dark:ring-gray-700/50 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:scale-105">
               <div className="h-64 bg-gray-200 dark:bg-gray-800 relative">
                 <Image 
-                  src="/images/team/alex.jpg" 
-                  alt="Alex Johnson"
+                  src="/images/team/muskaan.jpg" 
+                  alt="Muskaan"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">Alex Johnson</h3>
-                  <p className="text-blue-400">Content Strategy Lead</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white dark:bg-gray-800/30 rounded-lg overflow-hidden shadow-md hover:shadow-lg ring-1 ring-gray-200 dark:ring-gray-700/50 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:scale-105">
-              <div className="h-64 bg-gray-200 dark:bg-gray-800 relative">
-                <Image 
-                  src="/images/team/sarah.jpg" 
-                  alt="Sarah Williams"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">Sarah Williams</h3>
+                  <h3 className="text-xl font-bold">Muskaan</h3>
                   <p className="text-blue-400">Education Consultant</p>
                 </div>
               </div>

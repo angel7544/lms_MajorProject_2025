@@ -43,28 +43,28 @@ const TeamMember = ({
 export default function AboutPage() {
   const teamMembers = [
     {
-      name: "John Doe",
-      role: "Founder & Lead Developer",
-      bio: "John is a full-stack developer with over 10 years of experience in educational technology. He founded EduOrbit with the vision of making education accessible to everyone.",
-      image: "/images/team/john.jpg",
+      name: "Angel Singh",
+      role: "Founder & Developer",
+      bio: "Angel(Mehul) is a full-stack developer with over 4 years of experience in educational technology. He founded EduOrbit with the vision of making education accessible to everyone.",
+      image: "/images/team/angel.jpg",
     },
     {
-      name: "Jane Smith",
+      name: "Himanshu Kumar",
       role: "UX/UI Designer",
-      bio: "Jane is a passionate designer who believes in creating intuitive and engaging user experiences. She has designed digital interfaces for educational platforms for 6 years.",
-      image: "/images/team/jane.jpg",
+      bio: "Himanshu is a passionate designer who believes in creating intuitive and engaging user experiences. She has designed digital interfaces for educational platforms for 6 years.",
+      image: "/images/team/himanshu.webp",
     },
     {
-      name: "Alex Johnson",
-      role: "Content Strategy Lead",
-      bio: "Alex has a background in education and technology. He works with course creators to help them develop effective learning materials and strategies.",
-      image: "/images/team/alex.jpg",
+      name: "Ashutosh Kumar",
+      role: "Co-Founder & CTO",
+      bio: "Ashu has a background in education and technology. He works with course creators to help them develop effective learning materials and strategies.",
+      image: "/images/team/ashutosh.jpg",
     },
     {
-      name: "Sarah Williams",
+      name: "Muskaan",
       role: "Education Consultant",
-      bio: "With a PhD in Educational Technology, Sarah advises on learning methodologies and helps shape the platform's approach to online education.",
-      image: "/images/team/sarah.jpg",
+      bio: "Muskaan With a PhD in Educational Technology, Sarah advises on learning methodologies and helps shape the platform's approach to online education.",
+      image: "/images/team/muskaan.jpg",
     },
   ];
 
