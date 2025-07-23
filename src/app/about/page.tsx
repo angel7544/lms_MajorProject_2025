@@ -61,10 +61,10 @@ export default function AboutPage() {
       image: "/images/team/ashutosh.jpg",
     },
     {
-      name: "Muskaan",
+      name: "Niru",
       role: "Education Consultant",
-      bio: "Muskaan With a PhD in Educational Technology, Sarah advises on learning methodologies and helps shape the platform's approach to online education.",
-      image: "/images/team/muskaan.jpg",
+      bio: "Niru With a B.ed & M.ed in Education and have 10+ years of experience in Educating Young minds, Niru advises on learning methodologies and helps shape the platform's approach to online education.",
+      image: "/images/team/Niru.jpg",
     },
   ];
 
@@ -144,7 +144,7 @@ export default function AboutPage() {
       </div>
       
       <div className="flex justify-center items-center gap-5 py-10 border-t border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300">
-        <span>© 2024 EduOrbit. All rights reserved.</span>
+      <span>© 2025 <a href="https://br31tech.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">BR31-Technologies</a>. All rights reserved.</span>
       </div>
     </div>
   );

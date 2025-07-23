@@ -273,14 +273,14 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800/30 rounded-lg overflow-hidden shadow-md hover:shadow-lg ring-1 ring-gray-200 dark:ring-gray-700/50 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:scale-105">
               <div className="h-64 bg-gray-200 dark:bg-gray-800 relative">
                 <Image 
-                  src="/images/team/muskaan.jpg" 
-                  alt="Muskaan"
+                  src="/images/team/Niru.jpg" 
+                  alt="Niru"
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold">Muskaan</h3>
+                  <h3 className="text-xl font-bold">Niru</h3>
                   <p className="text-blue-400">Education Consultant</p>
                 </div>
               </div>
@@ -338,7 +338,7 @@ export default function Home() {
       </section>
 
       <div className="flex justify-center items-center gap-5 py-10 border-t border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300">
-        <span>© 2024 EduOrbit. All rights reserved.</span>
+        <span>© 2025 <a href="https://br31tech.live" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">BR31-Technologies</a>. All rights reserved.</span>
       </div>
     </div>
   );
