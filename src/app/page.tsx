@@ -80,7 +80,7 @@ export default function Home() {
     <div className="w-full min-h-screen bg-white dark:bg-black text-black dark:text-white">
       <Navbar />
       {/* Hero Section */}
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center pt-24 sm:pt-0">
         <GridPattern>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="flex flex-col items-center justify-center">
