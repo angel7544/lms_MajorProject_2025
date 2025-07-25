@@ -1,0 +1,9 @@
+# This site is part of https://www.br31tech.live
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://eduorbitp.netlify.app/sitemap.xml
+Sitemap: https://eduorbit.br31tech.live/sitemap.xml 
